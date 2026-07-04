@@ -1,0 +1,29 @@
+# Código da Aplicação
+
+
+## Estrutura Sugerida
+
+```
+src/
+├── app.py              # Aplicação principal
+├── agente.py           # Lógica do agente
+├── config.py           # Configurações
+└── requirements.txt    # Dependências
+```
+
+## Exemplo de requirements.txt
+
+```
+streamlit
+python-dotenv
+```
+
+## Como Rodar
+
+```bash
+# Instalar dependências
+pip install -r requirements.txt
+
+# Rodar a aplicação
+streamlit run app.py
+```
