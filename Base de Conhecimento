@@ -1,0 +1,35 @@
+# Base de Conhecimento
+
+## Dados Utilizados
+
+| Arquivo | Formato | Utilização no Agente |
+|---------|---------|---------------------|
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
+| `perfil_investidor.json` | JSON | Personalizar recomendações |
+| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+---
+
+## Estratégia de Integração
+
+### Como os dados são carregados?
+
+Os arquivos JSON e CSV são carregados durante o primeirio prompt.
+
+### Como os dados são usados no prompt?
+
+Conforme o modelo analisa o pedido do usuário ele verifica a base de dados em busca da informação adequada
+---
+
+## Exemplo de Contexto Montado
+```
+Dados do Cliente:
+- Nome: João Silva
+- Perfil: Moderado
+- Saldo disponível: R$ 5.000
+
+Últimas transações:
+- 01/11: Supermercado - R$ 450
+- 03/11: Streaming - R$ 55
+...
+```
